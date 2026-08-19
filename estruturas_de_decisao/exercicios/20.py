@@ -9,4 +9,4 @@ def caixa_eletronico():
         total = (saldo_disponivel - sacar)
         print('seu saldodisponivel agora é de {total}')
 caixa_eletronico()
-    
+
