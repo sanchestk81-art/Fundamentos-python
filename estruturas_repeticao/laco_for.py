@@ -5,8 +5,8 @@ def mostrar_numero():
         print(f'O numero atual é {i}')
         time.sleep(5)
 
-
 #mostrar_numero()
+
 def mostrar_numero_alternado():
     for num in range(0, 20, 2):
         print(f'O numero atual é {num}')
@@ -42,4 +42,4 @@ def lado_aninhado():
         print(f"nome do aluno:{nome}")
         for nota in notas:
             print(f"nota do aluno:{nota}")
-lado_aninhado()
+#lado_aninhado()
