@@ -54,15 +54,15 @@ encontrar_posicao_pelos_valores(lista_nomes, "Kishan")
 
 #caontando elementos da lista
 def quantidade_de_nomes(nomes):
-    quantidade = ten(nomes)
+    quantidade = len(nomes)
     print(f"Quantidade de nomes: {quantidade}")
-quantidade_de_nomes(lista_nomes)
+#quantidade_de_nomes(lista_nomes)
 
 #ordenando os elemententos da lista
 def odernar_nomes(nomes):
     lista_nomes_ordenados = sorted(lista_nomes)
     print(f"A lista ordenada é {lista_nomes_ordenados}")
-ordenar_nomes(lista_de_nomes)
+#ordenar_nomes(lista_de_nomes)
 
 
 #operações matematicas
@@ -81,11 +81,43 @@ def gerenciar_notas(notas, nova_nota):
 
     return notas_ordenadas, media
 
-notas_ordenadas, batata =  gerenciar_notas(notas_semestre, 3.5)
-print(f'A nota ordenada = {notas_ordenadas}')
-print(f'A media das notas é {batata}')
-gerenciar_notas()
+#notas_ordenadas, batata =  gerenciar_notas()
+#print(f'A nota ordenada = {notas_ordenadas}')
+#print(f'A media das notas é {batata}')
+#agerenciar_notas()
 
 
 notas_semestre = [7.8, 9.0, 4.5, 3.0,]
-calcular_media(notaas_semestre)
+#calcular_media(notas_semestre)
+
+#lista das listas
+def adicionar_produtos(produtos, produto):
+    produtos.append(produto)
+    print(f"minha lista de produtos: {produtos[0][2]}")
+
+lista_produtos = [
+    ["Morango", 4, 50.00],
+    ["bala fini", 3, 29.00]
+]
+novo_produto = ["coca-cola",3 , 9.00, "Monster", 4, 30.00]
+adicionar_produtos(lista_produtos, novo_produto)
+
+def quantidade_total_produtos(produtos):
+    quantidade = []
+    for produto in produtos:
+        quantidade.append(produto[1])
+    return sum(quantidade)
+
+quantidade_total_produtos(lista_produtos)
+
+def valor_total_produtos(produtos):
+    valores =[]
+
+    for produto in produtos:
+        valor= produto[1] * produto[2]
+        valores.append(valor)
+    return sum(valores)
+preco_total_produtos = valor_total_produtos(lista_produtos)
+print(f'O valor total dos produtor é {preco_total_produtos}')
+
+
