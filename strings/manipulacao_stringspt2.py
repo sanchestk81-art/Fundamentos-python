@@ -48,3 +48,33 @@ def validade_nome(nome):
 
 nome = input('digite seu nome: ')
 validade_nome(nome)
+
+#validar se a string contem letras e numeros
+
+def validar_usuario(usuario):
+    usuario_valido = usuario.isalnum()
+    if usuario_valido:
+        print("Usuário valido!!")
+    else:
+        print("Utilizar apenas letras e núemros!!!")
+nome_usuario = input('digite seu nome: ')
+validar_usuario(nome_usuario)
+
+#analisando uma frase
+def analisar_frase(frase, palavra):
+    frase_limpa = frase.strip().lower()
+
+    qts_caracteres = len(frase_limpa)
+    qts_palavras = len(frase_limpa.split())
+    ocorrencia_palavras = frase_limpa.count(palavra)
+
+    print(f'Frase completaa: {frase_limpa}')
+    print(f'Total de caracteres: {qts_caracteres}')
+    print(f'Total de palavras: {qts_palavras}')
+    print(f'Ocorrencia da palavra pesquisada: {ocorrencia_palavras}')
+
+frase_digitada = input('digite uma frase: ')
+ocorrencia_palavra = input('digite uma palavra: ')
+analisar_frase(frase_digitada, ocorrencia_palavra)
+
+

@@ -1,7 +1,7 @@
 # converter texto para maiuscula e minusculas
 def formatar_nome(nome):
     #nome maiusculo
-    nome_maiusculo = nome.upper() # função interna que recebe o texto e transforma ele en letras maiusculas
+    nome_maiusculo = nome.upper() # função interna que recebe o texto e transforma ele em letras maiusculas
    # nome minusculo
     nome_minusculo = nome.lower() # função que recebe o texto e diminui as letras
 
